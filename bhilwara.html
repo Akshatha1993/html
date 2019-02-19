@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <head>
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
+div:nth-of-type(1) {
+    height: 10%;
+}
+
+div:nth-of-type(2) {
+    height: 10%;
+}
+
+div:nth-of-type(3) {
+    height: 70%;
+}
+div:nth-of-type(4) {
+    height: 10%;
+}
+
+        .row{
+            border: 1px solid lightgray;
+            
+        }
+    .row span .col-md-2{
+        float: left;
+        height: 100%;
+        overflow: hidden;
+        width: 20%;
+       margin-left: 30px;
+    }
+    .row .text{
+        position: relative;
+        left: 10px;
+        top: -8px;
+        text-align: center;
+        vertical-align:-webkit-baseline-middle;
+        overflow: hidden;
+    }
+    .row1{
+        background-color:#7c7d88;
+        margin-top: -20px;
+
+    }
+    .row1 .text2{
+        text-align: center;
+        color: white;
+        vertical-align:-webkit-baseline-middle;
+        padding-top: 1%;
+    }
+.row3{
+    text-align: center;
+    top: 15px;
+    background-color:#7c7d88;
+    color: #fff;
+    font-weight: 600;
+
+}
+.row3 .phone{
+    float: left;
+    width: 15%;
+    align-content:center;
+    justify-content:center;
+    display: flex;
+    position: relative;
+}
+.row3 .location{
+    width: 70%;
+}
+.row3 .fax{
+    width: 15%;
+    float: right;
+}
+
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    20%{
+        left:0;
+    }
+    25%{
+        left:-100%;
+    }
+    45%{
+        left:-100%;
+    }
+    50%{
+        left:-200%;
+    }
+    70%{
+        left:-200%;
+    }
+    75%{
+        left:-300%;
+    }
+    95%{
+        left:-300%;
+    }
+    100%{
+        left:0%;
+    }
+}
+#row2{
+    overflow: hidden;
+}
+#row2 figure img{
+width: 20%;
+float: left;
+}
+#row2 figure{
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left:0;
+    text-align: left;
+    animation: 15s slide infinite;
+}
+    </style>
+        <title>Bhilwara</title>
+        <body>
+            <div class="row">
+                    <span><img class="col-md-2" src="logo.jpg" alt="Bhilwara Logo" width="75px"></span>
+                    <span><h1 class="text">BHILWARA INFOTECH PVT LTD</h1></span>
+            </div>
+            <div class="row1">
+                    <h1 class="text2">Welcome To Bhilwara</h1>    
+            </div>
+            <div id="row2"> 
+                <figure>
+                    <img src="slider1.jpg" alt="Slider 1" width="100%"/>
+                    <img src="slider2.jpg" alt="Slider 2"/>
+                    <img src="slider3.jpg" alt="Slider 3"/>
+                    <img src="slider4.jpg" alt="Slider 4"/>
+                </figure>
+            </div>
+            <div class="row3">  
+                   <span class="phone">Ph.No : 9860434002</span>
+                   <span class="location">Location : Fortune Layout, Silk Board, HSR Layout, Bangalore</span>
+                   <span class="fax">Fax No : 986043</span>
+            </div>
+        </body>
+    </head>
+</html>
